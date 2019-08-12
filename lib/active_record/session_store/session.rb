@@ -15,7 +15,7 @@ module ActiveRecord
       self.data_column_name = 'data'
 
       before_save :serialize_data!
-      before_save :raise_on_session_data_overflow!
+      #before_save :raise_on_session_data_overflow!
 
       # This method is defiend in `protected_attributes` gem. We can't check for
       # `attr_accessible` as Rails also define this and raise `RuntimeError`
